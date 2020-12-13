@@ -1,38 +1,142 @@
 .App {
+  margin: 0px;
+  padding: 0%;
+}
+
+.headimg{
+  max-width: 50rem;
+  
+}
+
+.navbar {
+  margin: 0%;
+  padding: 0%;
+}
+
+.navul{
+  list-style-type: none;
+  top: 0;  
+  position: -webkit-sticky;
+  position:sticky;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 2vh;
+}
+
+.navli{
+  float: left;
+}
+
+.navli a{
+  height: 6vh;
+ font-size: 3vh;
+display: block;
+
+position:sticky;
+top: 0%;
+padding: 14px 16px;
+text-decoration: none;
+color: white;
+padding: 2px 4px;
+margin: 2%;
+background-color: #999;
+}
+.navli a:hover{
+  background-color: #099999;
+}
+.navtitle {
+  
+  color:rgba(255, 99, 71, 0.7);
+  width: 100%;
+
+  font-size: 10rem;
+  margin: 0px;
+  padding: 1px;
   text-align: center;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.list {
+  display: inline;
+  align-items: baseline;
+  text-align: center;
+  list-style-type: none;
+  padding: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  background-color: #777;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.card:hover{
+  box-shadow: 0 4px 8px 0 #ddd;
+  background-color: #999;
+} 
+
+.agrid {
+  display: grid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 1%;
+  width: auto;
+  padding: 1%;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width:780px) {
+
+  
+.headimg{
+  max-width: 30rem;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navtitle {
+  
+    color:rgba(255, 99, 71, 0.9);
+    font-size:15vw;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+    background-image: url('./Component/images/Deadpooltitle.jpg');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .agrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
   }
+
+}
+
+@media (max-width:450px) {
+
+  
+.headimg{
+  max-width: 18rem;
+  
+}
+  .agrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+
 }
